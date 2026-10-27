@@ -1,0 +1,1126 @@
+[
+  {
+    "renderer": "status",
+    "payload": {
+      "viewer_count": 3,
+      "server_time": "2026-10-27T09:00:00",
+      "devices": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "platform": "windows",
+          "is_online": 1,
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "last_seen_at": "2026-10-27T09:00:00",
+          "extra": {
+            "battery_percent": 85,
+            "battery_charging": true,
+            "music": {
+              "title": "晴天",
+              "artist": "歌手",
+              "app": "播放器"
+            }
+          }
+        },
+        {
+          "device_id": "phone",
+          "device_name": "手机",
+          "platform": "android",
+          "is_online": true,
+          "app_name": "QQ",
+          "status_text": "正在聊天",
+          "display_title": "QQ",
+          "extra": {
+            "battery_percent": 50
+          }
+        },
+        {
+          "device_id": "offline",
+          "device_name": "旧电脑",
+          "is_online": 0
+        }
+      ],
+      "recent_activities": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发"
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📊 Live Dashboard 状态面板\n在线设备：2/3\n\n• 工作电脑 [在线] (windows)\n  现在：正在写代码\n  应用：Code\n  标题：插件开发\n  🔋 电量：85% ⚡充电中\n  🎵 音乐：歌手 - 晴天 (播放器)\n  🕒 上报：10-27 09:00:00\n\n• 手机 [在线] (android)\n  现在：正在聊天\n  应用：QQ\n  标题：（无可展示标题）\n  🔋 电量：50%\n  🎵 音乐：暂无播放\n  🕒 上报：暂无上报",
+      2
+    ]
+  },
+  {
+    "renderer": "status",
+    "payload": {
+      "viewer_count": 3,
+      "server_time": "2026-10-27T09:00:00",
+      "devices": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "platform": "windows",
+          "is_online": 1,
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "last_seen_at": "2026-10-27T09:00:00",
+          "extra": {
+            "battery_percent": 85,
+            "battery_charging": true,
+            "music": {
+              "title": "晴天",
+              "artist": "歌手",
+              "app": "播放器"
+            }
+          }
+        },
+        {
+          "device_id": "phone",
+          "device_name": "手机",
+          "platform": "android",
+          "is_online": true,
+          "app_name": "QQ",
+          "status_text": "正在聊天",
+          "display_title": "QQ",
+          "extra": {
+            "battery_percent": 50
+          }
+        },
+        {
+          "device_id": "offline",
+          "device_name": "旧电脑",
+          "is_online": 0
+        }
+      ],
+      "recent_activities": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发"
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": true,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": true,
+        "show_server_time": true,
+        "show_recent_activities": true,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📊 Live Dashboard 状态面板\n在线设备：2/3\n当前访客：3\n服务端时间：10-27 09:00:00\n\n• 工作电脑 [在线] (windows)\n  现在：正在写代码\n  应用：Code\n  标题：插件开发\n  🔋 电量：85% ⚡充电中\n  🎵 音乐：歌手 - 晴天 (播放器)\n  🕒 上报：10-27 09:00:00\n\n• 手机 [在线] (android)\n  现在：正在聊天\n  应用：QQ\n  标题：（无可展示标题）\n  🔋 电量：50%\n  🎵 音乐：暂无播放\n  🕒 上报：暂无上报\n\n• 旧电脑 [离线] (unknown)\n  现在：离线休息中喵~\n  应用：未识别应用\n  标题：（无可展示标题）\n  🕒 上报：暂无上报\n\n最近活动（工作电脑）：\n  1. 正在写代码「插件开发」",
+      3
+    ]
+  },
+  {
+    "renderer": "status",
+    "payload": {
+      "viewer_count": 3,
+      "server_time": "2026-10-27T09:00:00",
+      "devices": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "platform": "windows",
+          "is_online": 1,
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "last_seen_at": "2026-10-27T09:00:00",
+          "extra": {
+            "battery_percent": 85,
+            "battery_charging": true,
+            "music": {
+              "title": "晴天",
+              "artist": "歌手",
+              "app": "播放器"
+            }
+          }
+        },
+        {
+          "device_id": "phone",
+          "device_name": "手机",
+          "platform": "android",
+          "is_online": true,
+          "app_name": "QQ",
+          "status_text": "正在聊天",
+          "display_title": "QQ",
+          "extra": {
+            "battery_percent": 50
+          }
+        },
+        {
+          "device_id": "offline",
+          "device_name": "旧电脑",
+          "is_online": 0
+        }
+      ],
+      "recent_activities": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发"
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 1,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📊 Live Dashboard 状态面板\n在线设备：2/3\n\n• 工作电脑 [在线] (windows)\n  现在：正在写代码\n  应用：Code\n  标题：插件开发\n  🔋 电量：85% ⚡充电中\n  🎵 音乐：歌手 - 晴天 (播放器)\n  🕒 上报：10-27 09:00:00",
+      1
+    ]
+  },
+  {
+    "renderer": "status",
+    "payload": {
+      "viewer_count": 3,
+      "server_time": "2026-10-27T09:00:00",
+      "devices": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "platform": "windows",
+          "is_online": 1,
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "last_seen_at": "2026-10-27T09:00:00",
+          "extra": {
+            "battery_percent": 85,
+            "battery_charging": true,
+            "music": {
+              "title": "晴天",
+              "artist": "歌手",
+              "app": "播放器"
+            }
+          }
+        },
+        {
+          "device_id": "phone",
+          "device_name": "手机",
+          "platform": "android",
+          "is_online": true,
+          "app_name": "QQ",
+          "status_text": "正在聊天",
+          "display_title": "QQ",
+          "extra": {
+            "battery_percent": 50
+          }
+        },
+        {
+          "device_id": "offline",
+          "device_name": "旧电脑",
+          "is_online": 0
+        }
+      ],
+      "recent_activities": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发"
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "电脑",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📊 Live Dashboard 状态面板\n在线设备：1/2\n\n• 工作电脑 [在线] (windows)\n  现在：正在写代码\n  应用：Code\n  标题：插件开发\n  🔋 电量：85% ⚡充电中\n  🎵 音乐：歌手 - 晴天 (播放器)\n  🕒 上报：10-27 09:00:00",
+      1
+    ]
+  },
+  {
+    "renderer": "status",
+    "payload": {
+      "viewer_count": 3,
+      "server_time": "2026-10-27T09:00:00",
+      "devices": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "platform": "windows",
+          "is_online": 1,
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "last_seen_at": "2026-10-27T09:00:00",
+          "extra": {
+            "battery_percent": 85,
+            "battery_charging": true,
+            "music": {
+              "title": "晴天",
+              "artist": "歌手",
+              "app": "播放器"
+            }
+          }
+        },
+        {
+          "device_id": "phone",
+          "device_name": "手机",
+          "platform": "android",
+          "is_online": true,
+          "app_name": "QQ",
+          "status_text": "正在聊天",
+          "display_title": "QQ",
+          "extra": {
+            "battery_percent": 50
+          }
+        },
+        {
+          "device_id": "offline",
+          "device_name": "旧电脑",
+          "is_online": 0
+        }
+      ],
+      "recent_activities": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发"
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": "电脑"
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📊 Live Dashboard 状态面板\n在线设备：1/1\n\n• 手机 [在线] (android)\n  现在：正在聊天\n  应用：QQ\n  标题：（无可展示标题）\n  🔋 电量：50%\n  🎵 音乐：暂无播放\n  🕒 上报：暂无上报",
+      1
+    ]
+  },
+  {
+    "renderer": "status",
+    "payload": {
+      "viewer_count": 3,
+      "server_time": "2026-10-27T09:00:00",
+      "devices": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "platform": "windows",
+          "is_online": 1,
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "last_seen_at": "2026-10-27T09:00:00",
+          "extra": {
+            "battery_percent": 85,
+            "battery_charging": true,
+            "music": {
+              "title": "晴天",
+              "artist": "歌手",
+              "app": "播放器"
+            }
+          }
+        },
+        {
+          "device_id": "phone",
+          "device_name": "手机",
+          "platform": "android",
+          "is_online": true,
+          "app_name": "QQ",
+          "status_text": "正在聊天",
+          "display_title": "QQ",
+          "extra": {
+            "battery_percent": 50
+          }
+        },
+        {
+          "device_id": "offline",
+          "device_name": "旧电脑",
+          "is_online": 0
+        }
+      ],
+      "recent_activities": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发"
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "Code,插件开发",
+        "info_blacklist_replacement": "已隐藏"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📊 Live Dashboard 状态面板\n在线设备：2/3\n\n• 工作电脑 [在线] (windows)\n  现在：正在写代码\n  应用：已隐藏\n  标题：已隐藏\n  🔋 电量：85% ⚡充电中\n  🎵 音乐：歌手 - 晴天 (播放器)\n  🕒 上报：10-27 09:00:00\n\n• 手机 [在线] (android)\n  现在：正在聊天\n  应用：QQ\n  标题：（无可展示标题）\n  🔋 电量：50%\n  🎵 音乐：暂无播放\n  🕒 上报：暂无上报",
+      2
+    ]
+  },
+  {
+    "renderer": "status",
+    "payload": {
+      "viewer_count": 3,
+      "server_time": "2026-10-27T09:00:00",
+      "devices": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "platform": "windows",
+          "is_online": 1,
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "last_seen_at": "2026-10-27T09:00:00",
+          "extra": {
+            "battery_percent": 85,
+            "battery_charging": true,
+            "music": {
+              "title": "晴天",
+              "artist": "歌手",
+              "app": "播放器"
+            }
+          }
+        },
+        {
+          "device_id": "phone",
+          "device_name": "手机",
+          "platform": "android",
+          "is_online": true,
+          "app_name": "QQ",
+          "status_text": "正在聊天",
+          "display_title": "QQ",
+          "extra": {
+            "battery_percent": 50
+          }
+        },
+        {
+          "device_id": "offline",
+          "device_name": "旧电脑",
+          "is_online": 0
+        }
+      ],
+      "recent_activities": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发"
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": false,
+        "show_app_name": false,
+        "show_display_title": false,
+        "show_battery": false,
+        "show_music": false,
+        "show_last_seen": false,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📊 Live Dashboard 状态面板\n在线设备：2/3\n\n• 工作电脑 [在线]\n  现在：正在写代码\n\n• 手机 [在线]\n  现在：正在聊天",
+      2
+    ]
+  },
+  {
+    "renderer": "timeline",
+    "payload": {
+      "date": "2026-10-27",
+      "summary": {
+        "pc": {
+          "Code": 90,
+          "QQ": 15
+        }
+      },
+      "segments": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "started_at": "2026-10-27T08:00:00",
+          "duration_minutes": 30
+        },
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "started_at": "2026-10-27T08:30:00",
+          "duration_minutes": 60
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📜 Live Dashboard 时间线（2026-10-27）\n\n各应用累计时长（工作电脑）：\n  Code：1小时30分钟\n  QQ：15分钟\n\n时间线片段（工作电脑）：\n  08:00~08:30 正在写代码「插件开发」 ×2（1小时30分钟）",
+      1
+    ]
+  },
+  {
+    "renderer": "timeline",
+    "payload": {
+      "date": "2026-10-27",
+      "summary": {
+        "pc": {
+          "Code": 90,
+          "QQ": 15
+        }
+      },
+      "segments": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "started_at": "2026-10-27T08:00:00",
+          "duration_minutes": 30
+        },
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "started_at": "2026-10-27T08:30:00",
+          "duration_minutes": 60
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": false,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📜 Live Dashboard 时间线（2026-10-27）\n\n各应用累计时长：\n  Code：1小时30分钟\n  QQ：15分钟\n\n时间线片段：\n  08:00~08:30 正在写代码「插件开发」 ×2（1小时30分钟）",
+      1
+    ]
+  },
+  {
+    "renderer": "timeline",
+    "payload": {
+      "date": "2026-10-27",
+      "summary": {
+        "pc": {
+          "Code": 90,
+          "QQ": 15
+        }
+      },
+      "segments": [
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "started_at": "2026-10-27T08:00:00",
+          "duration_minutes": 30
+        },
+        {
+          "device_id": "pc",
+          "device_name": "工作电脑",
+          "app_name": "Code",
+          "status_text": "正在写代码",
+          "display_title": "插件开发",
+          "started_at": "2026-10-27T08:30:00",
+          "duration_minutes": 60
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "Code,插件开发",
+        "info_blacklist_replacement": "已隐藏"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": [
+      "📜 Live Dashboard 时间线（2026-10-27）\n\n各应用累计时长（工作电脑）：\n  已隐藏：1小时30分钟\n  QQ：15分钟\n\n时间线片段（工作电脑）：\n  08:00~08:30 正在写代码「已隐藏」 ×2（1小时30分钟）",
+      1
+    ]
+  },
+  {
+    "renderer": "health",
+    "payload": {
+      "date": "2026-10-27",
+      "records": [
+        {
+          "device_id": "pc",
+          "type": "heart_rate",
+          "value": 72
+        },
+        {
+          "device_id": "pc",
+          "type": "steps",
+          "value": 12345
+        },
+        {
+          "device_id": "pc",
+          "type": "sleep",
+          "value": 450
+        },
+        {
+          "device_id": "pc",
+          "type": "distance",
+          "value": 2500
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 40,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": "❤️ Live Dashboard 健康数据（2026-10-27）\n\n• pc\n  心率：72 bpm\n  步数：12,345\n  睡眠：7小时30分\n  距离：2.5 km"
+  },
+  {
+    "renderer": "health",
+    "payload": {
+      "date": "2026-10-27",
+      "records": [
+        {
+          "device_id": "pc",
+          "type": "heart_rate",
+          "value": 72
+        },
+        {
+          "device_id": "pc",
+          "type": "steps",
+          "value": 12345
+        },
+        {
+          "device_id": "pc",
+          "type": "sleep",
+          "value": 450
+        },
+        {
+          "device_id": "pc",
+          "type": "distance",
+          "value": 2500
+        }
+      ]
+    },
+    "config": {
+      "connection": {
+        "base_url": "",
+        "auth_token": "",
+        "request_timeout_sec": 30
+      },
+      "output_scope": {
+        "include_offline_devices": false,
+        "max_devices": 10,
+        "device_whitelist_keywords": "",
+        "device_blacklist_keywords": ""
+      },
+      "access_control": {
+        "group_blacklist_sessions": "",
+        "user_blacklist_senders": "",
+        "info_blacklist_keywords": "",
+        "info_blacklist_replacement": "不想让你看到我在干什么喵~"
+      },
+      "output_fields": {
+        "show_platform": true,
+        "show_app_name": true,
+        "show_display_title": true,
+        "show_battery": true,
+        "show_music": true,
+        "show_last_seen": true,
+        "show_viewer_count": false,
+        "show_server_time": false,
+        "show_recent_activities": false,
+        "recent_activities_max": 5
+      },
+      "caching": {
+        "friend_config_cache_ttl_sec": 30
+      },
+      "commands": {
+        "enable_system_status_command": true,
+        "enable_timeline_command": true,
+        "timeline_max_segments": 40,
+        "timeline_show_device_names": true,
+        "enable_health_command": true,
+        "health_max_records": 1,
+        "enable_friend_command": true
+      },
+      "telemetry_config": {
+        "enabled": true
+      }
+    },
+    "expected": "❤️ Live Dashboard 健康数据（2026-10-27）\n\n• pc\n  心率：72 bpm\n  … 还有更多数据未展示（上限 1 个指标项）"
+  }
+]
